@@ -24,9 +24,10 @@ export default class {
 
     // When the editor is ready, set the value to whatever is stored in indexeddb.
     // Fall back to localStorage if nothing is stored in indexeddb, and if neither is available, set the value to header.
+    // everything in front of the question mark needs to pass true to pass data. this is the condition. After question mark think of it like an if else  so else local data
     getDb().then((data) => {
       console.info('Loaded data from IndexedDB, injecting into editor');
-      this.editor.setValue(data || localData || header);
+      this.editor.setValue(data && data.length > 0 ? data : localData || header);
     });
 
     this.editor.on('change', () => {
