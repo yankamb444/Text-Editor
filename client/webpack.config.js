@@ -1,3 +1,4 @@
+// Refrenced code in the mini project under 19-PWA for this 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
@@ -21,7 +22,7 @@ module.exports = () => {
       // Webpack plugin that generates our html file and injects our bundles. 
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'JATE'
       }),
      
       // Injects our custom service worker
@@ -35,7 +36,7 @@ module.exports = () => {
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
-        short_name: 'Jake',
+        short_name: 'Jate',
         description: 'Never forget your edits!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
