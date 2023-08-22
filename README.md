@@ -33,6 +33,7 @@ The goal of the challenge is to create a text editor.
  1. IndexedDB: https://www.npmjs.com/package/idb 
 
 # Image
+![Web capture_22-8-2023_112926_localhost](https://github.com/yankamb444/Text-Editor/assets/127771643/b649ac3c-05be-4bda-92f3-82d09c6596c8)
 
 # Resources Used
 This challenge was created with the help of a tutor, starter code, class examples (mini project in the class repo: under 19-PWA in activities), and the resource(s) below.  
